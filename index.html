@@ -10,7 +10,6 @@
     <script
       type="module"
       src="https://cdn.jsdelivr.net/npm/seamless-scroll-polyfill@latest/lib/bundle.min.js"
-      defer
     ></script>
     <script type="module" src="js/script.js" defer></script>
   </head>
@@ -297,15 +296,15 @@
         </div>
         <div class="modal__elements block-center-horis">
           <div class="modal__input">
-            <input type="text" class="modal__input" />
+            <input type="text" name="mess" class="modal__input" />
           </div>
           <div class="modal__input">
-            <input type="tel" class="modal__input" />
+            <input type="tel" name="tel" class="modal__input" />
           </div>
           <div class="modal__input">
-            <input type="email" class="modal__input" />
+            <input type="email" name="email" class="modal__input" />
           </div>
-          <button type="button" class="button modal__button">Отправить</button>
+          <button type="submit" class="button modal__button">Отправить</button>
         </div>
       </div>
     </form>
