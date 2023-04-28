@@ -468,6 +468,7 @@ progress::-moz-progress-value {
 
 .command__item {
     flex-direction: column;
+    
 }
 
 .command__title {
@@ -476,7 +477,7 @@ progress::-moz-progress-value {
 
 .command__wrap {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
 }
 
 .command__name {

@@ -22,7 +22,7 @@ export const sendForm = () => {
         } else {
           throw new Error("Плохи дела!!!");
         }
-      })
+      }).then(json=>alert("Вы успешно отправили!"))
       .catch((error) => {
         alert(error.message);
       })
@@ -30,6 +30,7 @@ export const sendForm = () => {
         obj = {};
         form.reset();
         form.classList.remove("active");
+        
       });
   });
 };

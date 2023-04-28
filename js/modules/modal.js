@@ -8,6 +8,7 @@ export const modal = (...selectors) => {
     div.classList.add("modal__close");
     div.addEventListener("click", () => {
       modal.classList.remove("active");
+      document.body.classList.remove('body-locked')
     });
     modalInner.appendChild(div);
   }
@@ -15,12 +16,15 @@ export const modal = (...selectors) => {
   buttons.forEach((item) => {
     item.addEventListener("click", () => {
       modal.classList.toggle("active");
+      document.body.classList.add('body-locked')
     });
   });
 
   modal.addEventListener("click", (e) => {
     if (!e.target.closest(".modal__inner")) {
       modal.classList.toggle("active");
+    document.body.classList.remove('body-locked')
+
     }
   });
 

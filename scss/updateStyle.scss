@@ -1,0 +1,120 @@
+.body-locked{
+    overflow: hidden;
+}
+body{
+    cursor: default;
+
+}
+.header__button{
+    margin-left: 0;
+}
+.button__container{
+    width: 19rem;
+    text-align: center;
+    margin-left: 48rem;
+}
+input{
+    &::placeholder{
+        color: white;
+        
+    }
+}
+.command{
+    margin-bottom: 35rem;
+    
+padding-bottom: 15rem;
+}
+.command__wrap{
+    position: relative;
+}
+.command__img {
+    
+    transition: all 0.3s ease 0s;
+}
+.command__item{
+    position: absolute;
+}
+.command__item:nth-child(1){
+    
+}
+.command__item:nth-child(2){
+    left: 42%;
+}
+.command__item:nth-child(3){
+    right: 0;
+}
+.command__item.active{
+    
+}
+.command__item.active>.command__profession{
+    margin-bottom: 1rem;
+}
+.comand__description{
+    position: relative;
+    font-size: 1.6rem;
+    line-height: 1.7;
+    margin-bottom: 14rem;
+    
+    
+}
+
+
+.comand__description>p{
+position: absolute;
+width: 50rem;
+top: 0;
+left: 0;
+margin: 0;
+}
+
+
+.command__item.active>.command__img{
+    width: 10rem;
+    border: 1px solid white;
+    height: 10rem;
+    margin-bottom: 2rem;
+}
+.command__item:nth-child(1).active>.comand__description{
+    left: -11rem;
+}
+.command__item:nth-child(2).active>.comand__description{
+    left: -20rem;
+}
+.command__item:nth-child(2).active>.command__button-hid{
+    margin-top: -5rem;
+}
+.command__item:nth-child(3).active>.comand__description{
+    left: -38rem;
+
+}
+.command__item:nth-child(3).active>.command__button-hid{
+    margin-top: 2rem;
+}
+.command__item:nth-child(3).active>.comand__description>p{
+    text-align: right;
+}
+.command__item.active>.comand__description{
+    display: block;
+}
+.hidden{
+    display: none;
+}
+
+.modalAcc{
+    position: fixed;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    overflow-y: auto;
+    overflow-x: hidden;
+    z-index: 10;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 3rem 0;
+    display: none;
+}
+.modalAcc.active{
+    display: flex;
+}
+.acc__enter{
+    align-self: flex-start;
+}

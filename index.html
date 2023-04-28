@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="css/normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/updateStyle.css" />
     <title>Собираем ПК</title>
     <script
       type="module"
@@ -26,7 +27,10 @@
             <a href="#">Процесс работы</a>
             <a href="#">Команда</a>
           </nav>
-          <button class="button header__button">Зайти в кабинет</button>
+          <div class="button__container">
+            <button class="button header__button" data-head-field="enter">Зайти в кабинет</button>
+            <button class="button header__button hidden" data-head-field="exit">Выйти</button>
+          </div>
         </div>
       </div>
     </header>
@@ -231,29 +235,55 @@
             <h2 class="process__header">Наша команда</h2>
           </div>
           <div class="command__wrap">
-            <div class="command__item block-center-horis">
+            <div class="command__item block-center-horis ">
               <div class="command__img">
                 <img src="img/com-1.png" alt="" />
               </div>
               <h3 class="command__name">Евгений Петров</h3>
               <div class="command__profession">Специалист по видеокартам</div>
-              <button class="button command__button">Биография</button>
+              <div class="comand__description hidden">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
+                  hic impedit totam tempore ducimus? Voluptas saepe, molestiae
+                  reiciendis rem nisi commodi ipsa consequatur. Temporibus
+                  consectetur quos vero odit, dolore animi.
+                </p>
+              </div>
+              <button class="button command__button command__button-bio">Биография</button>
+              <button class="button command__button command__button-hid hidden">Скрыть</button>
             </div>
-            <div class="command__item block-center-horis">
+            <div class="command__item block-center-horis ">
               <div class="command__img">
                 <img src="img/com-2.png" alt="" />
               </div>
               <h3 class="command__name">Алексей Козлов</h3>
               <div class="command__profession">Специалист по видеокартам</div>
-              <button class="button command__button">Биография</button>
+              <div class="comand__description hidden">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
+                  hic impedit totam tempore ducimus? Voluptas saepe.
+                </p>
+              </div>
+              <button class="button command__button command__button-bio">Биография</button>
+              <button class="button command__button command__button-hid hidden">Скрыть</button>
             </div>
-            <div class="command__item block-center-horis">
+            <div class="command__item block-center-horis ">
               <div class="command__img">
                 <img src="img/com-3.png" alt="" />
               </div>
               <h3 class="command__name">Дмитрий Иванов</h3>
               <div class="command__profession">Специалист по видеокартам</div>
-              <button class="button command__button">Биография</button>
+              <div class="comand__description hidden">
+                <p>
+                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quam
+                  hic impedit totam tempore ducimus? Voluptas saepe, molestiae
+                  reiciendis rem nisi commodi ipsa consequatur. Temporibus
+                  consectetur quos vero odit, dolore animi. consequatur. Temporibus
+                  consectetur quos vero odit, dolore animi.
+                </p>
+              </div>
+              <button class="button command__button command__button-bio">Биография</button>
+              <button class="button command__button command__button-hid hidden">Скрыть</button>
             </div>
           </div>
         </div>
@@ -287,7 +317,33 @@
         </div>
       </section>
     </main>
-
+    <form action="#" class="modalAcc block-center">
+      <div class="modal__inner">
+        <div class="modal__header">Вход в аккаунт</div>
+        <div class="modal__subheader">
+          Введите свой логин и пароль
+        </div>
+        <div class="modal__elements block-center-horis">
+          <div class="modal__input">
+            <input
+              type="text"
+              name="login"
+              class="modal__input"
+              placeholder="login"
+            />
+          </div>
+          <div class="modal__input">
+            <input
+              type="password"
+              name="password"
+              class="modal__input"
+              placeholder="password"
+            />
+          </div>
+          <button type="submit" class="button modal__button acc__enter">войти</button>
+        </div>
+      </div>
+    </form>
     <form action="#" class="modal block-center">
       <div class="modal__inner">
         <div class="modal__header">Заявка на сборку ПК</div>
@@ -296,13 +352,28 @@
         </div>
         <div class="modal__elements block-center-horis">
           <div class="modal__input">
-            <input type="text" name="mess" class="modal__input" />
+            <input
+              type="text"
+              name="mess"
+              class="modal__input"
+              placeholder="Как вас зовут?"
+            />
           </div>
           <div class="modal__input">
-            <input type="tel" name="tel" class="modal__input" />
+            <input
+              type="tel"
+              name="tel"
+              class="modal__input"
+              placeholder="Введите номер телефона"
+            />
           </div>
           <div class="modal__input">
-            <input type="email" name="email" class="modal__input" />
+            <input
+              type="email"
+              name="email"
+              class="modal__input"
+              placeholder="email@email.com"
+            />
           </div>
           <button type="submit" class="button modal__button">Отправить</button>
         </div>
