@@ -12,26 +12,19 @@
     
 }
 @media  (max-width:768.98px) {
-    // .main-display{
-    //     display: none;
-
-    // }
-    // .process{
-    //     display: none;
-    // }
-    .program{
-        display: none;
-        
-    } 
-    
+    // .program{
+    //     display: none; 
+    // } 
+    .header{
+        padding: 4rem 2rem;
+    }
     .header__menu {
         position: absolute;
-        // height: 15rem;
         background-color: black;
         flex-direction: column;
         border: 1px dotted white;
-        top: 90%;
-        right: 13rem;
+        top: 85%;
+        right: 8rem;
         transition: all 0.3s ease 0s;
         z-index: 100;
         width: 200px;
@@ -63,16 +56,7 @@
     .container{
         width: 100%;
     }
-    .header__nav {
-    }
-    .block-center-horis {
-    }
-    .button__container {
-    }
-    .button {
-    }
-    .header__button {
-    }
+    
     .burger{
         display: block;
         width: 50px;
@@ -103,7 +87,7 @@
         transform: rotate(-45deg);
         margin-top: 0;
     }
-    .burger>span::after{}
+    
     .course{
         display: none;
     }
@@ -132,8 +116,7 @@
         padding-bottom: 15rem;
         padding-top: 0;
     }
-    .container {
-    }
+    
     .work__wrap {
         flex-direction: column-reverse;
         align-items: center;
@@ -264,10 +247,31 @@
     .assembly__button{
         font-size: 13px;
     }
+
+    .program__content {
+        align-items: normal;
+    }
+    .program-line {
+        width: auto;
+    }
+    .program-line__content {
+    }
+    .program-line__title {
+    }
+    .program-line__descr {
+        text-align: center;
+    }
+    
+    .active {
+    }
+
 }
 @media (max-width:420px) {
     .process__columns{
         display: block;
+    }
+    .program__image>img{
+        width: 60%;
     }
     .process__item{
         margin: 0 auto;
@@ -279,5 +283,17 @@
     .process__item:nth-child(4){
         margin-top: 4rem;
 
+    }
+    .program-line__descr {
+        font-size: 14px;
+    }
+    .program-line__content:nth-child(2n+1)>.program-line__descr {
+        text-align: left;
+        padding-left: 1rem;
+
+    }
+    .program-line__content:nth-child(2n)>.program-line__descr {
+        text-align: right;
+        padding-right: 1rem;
     }
 }

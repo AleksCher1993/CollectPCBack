@@ -12,16 +12,16 @@
   }
 }
 @media (max-width: 768.98px) {
-  .program {
-    display: none;
+  .header {
+    padding: 4rem 2rem;
   }
   .header__menu {
     position: absolute;
     background-color: black;
     flex-direction: column;
     border: 1px dotted white;
-    top: 90%;
-    right: 13rem;
+    top: 85%;
+    right: 8rem;
     transition: all 0.3s ease 0s;
     z-index: 100;
     width: 200px;
@@ -232,10 +232,22 @@
   .assembly__button {
     font-size: 13px;
   }
+  .program__content {
+    align-items: normal;
+  }
+  .program-line {
+    width: auto;
+  }
+  .program-line__descr {
+    text-align: center;
+  }
 }
 @media (max-width: 420px) {
   .process__columns {
     display: block;
+  }
+  .program__image > img {
+    width: 60%;
   }
   .process__item {
     margin: 0 auto;
@@ -246,5 +258,16 @@
   }
   .process__item:nth-child(4) {
     margin-top: 4rem;
+  }
+  .program-line__descr {
+    font-size: 14px;
+  }
+  .program-line__content:nth-child(2n+1) > .program-line__descr {
+    text-align: left;
+    padding-left: 1rem;
+  }
+  .program-line__content:nth-child(2n) > .program-line__descr {
+    text-align: right;
+    padding-right: 1rem;
   }
 }
