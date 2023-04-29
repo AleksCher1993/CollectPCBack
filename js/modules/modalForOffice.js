@@ -3,6 +3,8 @@ export const modalForOffice = () => {
   const exitOAccountBtn = document.querySelector('[data-head-field="exit"]');
   const modalAcc = document.querySelector(".modalAcc");
   const modalInner = modalAcc.querySelector(".modal__inner");
+  const burgerBtn=document.querySelector('.burger')
+  const headerMenu=document.querySelector('.header__menu')
   const adminAcc = {
     login: "admin",
     password: "1234",
@@ -26,6 +28,8 @@ export const modalForOffice = () => {
         modalAcc.reset();
         localStorage.setItem("admin", JSON.stringify(accObj));
         alert("Добро пожаловать ADMIN");
+        burgerBtn.classList.toggle('active')
+        headerMenu.classList.toggle('active')
       } else {
         alert("Вы не верно ввели данные. Попробуйте снова!");
       }
@@ -54,6 +58,8 @@ export const modalForOffice = () => {
     enterAccountBtn.classList.remove("hidden");
     exitOAccountBtn.classList.add("hidden");
     localStorage.removeItem("admin");
+    burgerBtn.classList.toggle('active')
+        headerMenu.classList.toggle('active')
   });
   modalAcc.addEventListener("click", (e) => {
     if (!e.target.closest(".modal__inner")) {

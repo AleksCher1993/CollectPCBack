@@ -12,9 +12,6 @@
   }
 }
 @media (max-width: 768.98px) {
-  .process {
-    display: none;
-  }
   .program {
     display: none;
   }
@@ -38,7 +35,7 @@
   }
   .header__nav > a {
     font-size: 16px;
-    margin-bottom: 1rem;
+    margin-bottom: 20px;
   }
   .header__nav a:not(:last-child) {
     margin-right: 0;
@@ -95,13 +92,13 @@
     z-index: 1;
   }
   .main-display__background {
-    height: 70rem;
+    height: 80rem;
   }
   .main-display__background > img {
     -o-object-fit: cover;
        object-fit: cover;
-    -o-object-position: left;
-       object-position: left;
+    -o-object-position: center;
+       object-position: center;
   }
   .main-display__header {
     text-align: center;
@@ -118,6 +115,23 @@
     align-items: center;
     text-align: center;
   }
+  .process__img {
+    margin-left: 10rem;
+  }
+  .process__header {
+    text-align: left;
+    text-align: center;
+  }
+  .process__description {
+    font-size: 13px;
+    margin: 0 auto;
+    max-width: 80%;
+    margin-bottom: 5rem;
+    text-align: center;
+  }
+  .process__columns:after {
+    width: 100%;
+  }
   .work__img {
     margin: 0 auto;
   }
@@ -133,8 +147,12 @@
     margin-bottom: 5rem;
     padding-top: 0;
   }
+  .work__description {
+    font-size: 12px;
+  }
   .command {
     margin-bottom: 0;
+    padding-bottom: 7rem;
   }
   .process__title {
     text-align: center;
@@ -148,11 +166,50 @@
   }
   .command__item {
     position: static;
+    margin-bottom: 10rem;
+  }
+  .command__img {
+    width: 190px;
+    height: 190px;
+  }
+  .command__item.active > .command__img {
+    width: 190px;
+    height: 190px;
+    border: none;
+  }
+  .command__item:nth-child(2).active > .command__button-hid {
+    margin-top: 0;
+  }
+  .command__name {
+    font-size: 16px;
+  }
+  .command__profession {
+    font-size: 13px;
+  }
+  .comand__description {
+    margin-top: 3rem;
+    position: static;
+    font-size: 12px;
+    text-align: center;
+    margin-bottom: 5rem;
+  }
+  .command__button {
+    font-size: 14px;
+  }
+  .comand__description > p {
+    position: static;
   }
   .assembly {
     padding-bottom: 15rem;
   }
   .assembly__header {
     text-align: center;
+  }
+  .assembly__description {
+    font-size: 12px;
+    text-align: center;
+  }
+  .assembly__button {
+    font-size: 13px;
   }
 }
