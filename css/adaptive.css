@@ -12,13 +12,147 @@
   }
 }
 @media (max-width: 768.98px) {
-  .header__menu {
+  .process {
     display: none;
+  }
+  .program {
+    display: none;
+  }
+  .header__menu {
+    position: absolute;
+    background-color: black;
+    flex-direction: column;
+    border: 1px dotted white;
+    top: 90%;
+    right: 13rem;
+    transition: all 0.3s ease 0s;
+    z-index: 100;
+    width: 200px;
+  }
+  .header__menu.active {
+    top: -300%;
+  }
+  .header__nav {
+    flex-direction: column;
+    text-align: right;
+  }
+  .header__nav > a {
+    font-size: 16px;
+    margin-bottom: 1rem;
+  }
+  .header__nav a:not(:last-child) {
+    margin-right: 0;
+  }
+  .header__button {
+    font-size: 14px;
+  }
+  .button__container {
+    margin-left: 0;
+    padding-bottom: 1rem;
+    width: 100%;
+  }
+  .container {
+    width: 100%;
   }
   .burger {
     display: block;
+    width: 50px;
+    height: 50px;
+    position: relative;
+  }
+  .burger > span {
+    display: inline-block;
+    width: 100%;
+    height: 4px;
+    background-color: white;
+    margin-top: 10px;
+    transition: all 0.3s ease 0s;
+  }
+  .burger.active > span {
+    position: absolute;
+    top: 50%;
+  }
+  .burger.active > span:nth-child(1) {
+    transform: rotate(45deg);
+    margin-top: 0;
+  }
+  .burger.active > span:nth-child(2) {
+    display: none;
+  }
+  .burger.active > span:nth-child(3) {
+    transform: rotate(-45deg);
+    margin-top: 0;
   }
   .course {
     display: none;
+  }
+  .main-display__header {
+    max-width: 100%;
+  }
+  .main-display {
+    padding-bottom: 15rem;
+    position: relative;
+    z-index: 1;
+  }
+  .main-display__background {
+    height: 70rem;
+  }
+  .main-display__background > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+    -o-object-position: left;
+       object-position: left;
+  }
+  .main-display__header {
+    text-align: center;
+  }
+  .main-display__timer {
+    justify-content: center;
+  }
+  .work {
+    padding-bottom: 15rem;
+    padding-top: 0;
+  }
+  .work__wrap {
+    flex-direction: column-reverse;
+    align-items: center;
+    text-align: center;
+  }
+  .work__img {
+    margin: 0 auto;
+  }
+  .program {
+    padding-bottom: 15rem;
+    margin-bottom: 0;
+  }
+  .program__image {
+    margin: 0;
+    margin-left: 11%;
+  }
+  .work__text {
+    margin-bottom: 5rem;
+    padding-top: 0;
+  }
+  .command {
+    margin-bottom: 0;
+  }
+  .process__title {
+    text-align: center;
+  }
+  .command__img-title {
+    margin-left: 26%;
+  }
+  .command__wrap {
+    flex-direction: column;
+    position: static;
+  }
+  .command__item {
+    position: static;
+  }
+  .assembly {
+    padding-bottom: 15rem;
+  }
+  .assembly__header {
+    text-align: center;
   }
 }

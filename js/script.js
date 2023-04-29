@@ -1,4 +1,5 @@
 import { accordion } from "./modules/accordions.js";
+import { burger } from "./modules/burger.js";
 import { modal } from "./modules/modal.js";
 import { modalForOffice } from "./modules/modalForOffice.js";
 import { scroll } from "./modules/scroll.js";
@@ -16,3 +17,4 @@ timer(`27 april ${new Date().getFullYear()+1}`);
 sendForm();
 tabs()
 modalForOffice()
+burger()
