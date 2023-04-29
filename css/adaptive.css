@@ -1,0 +1,24 @@
+.burger {
+  display: none;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .main-display__background {
+    height: 512px;
+  }
+  .main-display__background > img {
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+}
+@media (max-width: 768.98px) {
+  .header__menu {
+    display: none;
+  }
+  .burger {
+    display: block;
+  }
+  .course {
+    display: none;
+  }
+}
